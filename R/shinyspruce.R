@@ -1,0 +1,34 @@
+#' @title Interative plots with shiny involving spruce data set
+#'
+#' @description Determining placement of knots to maximize R squared
+#'
+#' @details input through widgets to create output of tables and plots
+#'
+#' @return plots and tables
+#'
+#' @section shiny:
+#' run shiny web server
+#'
+#' @section shiny server:
+#'
+#' \enumerate{
+#' \item Must populate the output list
+#' \item Must use Render functions
+#' \item Must use the input list
+#' }
+#'
+#' @section shiny reactivity:
+#'The main engine that drives \emph{shiny server} is the concept of \emph{reactivity} this is what makes shiny apps responsive.
+#' The concept is a very important one and you must understand it completely by visiting a video and then reading an article.
+#' \enumerate{
+#' \item Please visit \href{https://vimeo.com/rstudioinc/review/131218530/212d8a5a7a/#t=47m27s}{Reactivity}
+#' \item Read \href{https://shiny.rstudio.com/articles/reactivity-overview.html}{this informative article}
+#' }
+#'
+#' @export
+#'
+#' @examples
+#'\dontrun{ shinyddt()}
+shinyspruce<-function(){
+  shiny::runApp(appDir = "/Users/martiheit/Documents/School/Fall 2020/Regression/Packages/math4773mh/R/myapp/app.R",launch.browser = TRUE)
+}
